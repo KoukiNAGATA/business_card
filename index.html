@@ -39,9 +39,9 @@
         <a-asset-item id="photo" src="assets/img/koukinagata.jpeg"></a-asset-item>
         <!-- contact -->
         <img id="qiita" src="assets/img/contact/qiitan.png" />
-        <img id="facebook" src="assets/img/contact/Face.png" />
+        <img id="facebook" src="assets/img/contact/face.png" />
         <img id="twitter" src="assets/img/contact/twi.png" />
-        <img id="github" src="assets/img/contact/GitHub.png" />
+        <img id="github" src="assets/img/contact/github.png" />
         <img id="youtube" src="assets/img/contact/youtube.png" />
         <img id="commingsoon" src="assets/img/contact/commingsoon.png" />
       </a-assets>
@@ -57,12 +57,18 @@
       >
         <!-- centor -->
         <a-entity
-          src="#photo"
-          scale="1 1 1"
           rotation="0 0 0"
           link="href: https://github.com/KoukiNAGATA/business_card"
           animation-mixer
-        ></a-entity>
+        >
+          <a-image
+            src="#photo"
+            width="0.50"
+            height="0.50"
+            rotation="-60 0 0"
+            animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
+          ></a-image>
+        </a-entity>
         <a-text
           mixin="text"
           value="KoukiNAGATA"
@@ -91,8 +97,8 @@
           >
             <a-image
               src="#qiita"
-              width="0.25"
-              height="0.25"
+              width="0.50"
+              height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
@@ -111,8 +117,8 @@
           >
             <a-image
               src="#facebook"
-              width="0.25"
-              height="0.25"
+              width="0.50"
+              height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
@@ -131,8 +137,8 @@
           >
             <a-image
               src="#twitter"
-              width="0.25"
-              height="0.25"
+              width="0.50"
+              height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
@@ -151,8 +157,8 @@
           >
             <a-image
               src="#github"
-              width="0.25"
-              height="0.25"
+              width="0.50"
+              height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
@@ -171,8 +177,8 @@
           >
             <a-image
               src="#youtube"
-              width="0.25"
-              height="0.25"
+              width="0.50"
+              height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
