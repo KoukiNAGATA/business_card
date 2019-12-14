@@ -25,18 +25,18 @@
         <!-- text -->
         <a-mixin
           id="text"
-          text="color: white; anchor: center; font: sourcecodepro"
+          text="color: black; anchor: center; font: dejavu"
           rotation="-90 0 0"
           shadow="receive: true"
         ></a-mixin>
         <a-mixin
           id="shadow"
-          text="color: black; anchor: center; font: sourcecodepro; opacity: 0.8"
+          text="color: white; anchor: center; font: dejavu; opacity: 0.8"
           rotation="-90 0 0"
           shadow="receive: true"
         ></a-mixin>
         <!-- photo -->
-        <a-asset-item id="photo" src="assets/img/koukinagata.jpeg"></a-asset-item>
+        <a-asset-item id="photo" src="assets/img/koukinagata"></a-asset-item>
         <!-- contact -->
         <img id="qiita" src="assets/img/contact/qiitan.png" />
         <img id="facebook" src="assets/img/contact/face.png" />
@@ -66,13 +66,13 @@
             width="0.50"
             height="0.50"
             rotation="-60 0 0"
-            animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
-          ></a-image>
+            animation="property: scale; to:1.5 1.5 1; direction: alternate; dur: 2000; repeat: indefinite; easing: linear"
+          >
+          </a-image>
         </a-entity>
         <a-text
           mixin="text"
           value="KoukiNAGATA"
-          color="#black"
           align="center"
           width="4.5"
           position="0.0 0.1 0.4"
@@ -90,26 +90,27 @@
           rotation="0 0 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 25000; easing: linear"
         >
-          <!-- qiita -->
+          <!-- twitter -->
           <a-entity
             position="0 0.6 -1"
-            link="href: https://qiita.com/KoukiNAGATA"
+            link="href: https://twitter.com/NAGATAChannel"
           >
             <a-image
-              src="#qiita"
+              src="#twitter"
               width="0.50"
               height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
             <a-triangle
-              color="blue"
+              color="aqua"
               vertex-a="0 0 1"
               vertex-b="11.76 0 -15.18"
               vertex-c="-11.76 0 -15.18"
               opacity="0"
             ></a-triangle>
           </a-entity>
+
           <!-- facebook -->
           <a-entity
             position="-0.951 0.6 -0.309"
@@ -123,33 +124,35 @@
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
             <a-triangle
-              color="red"
+              color="blue"
               vertex-a="0.951 0 0.309"
               vertex-b="-10.81 0 -15.87"
               vertex-c="-18.07 0 6.489"
               opacity="0"
             ></a-triangle>
           </a-entity>
-          <!-- twitter -->
+
+          <!-- qiita -->
           <a-entity
             position="-0.588 0.6 0.809"
-            link="href: https://twitter.com/NAGATAChannel"
+            link="href: https://qiita.com/KoukiNAGATA"
           >
             <a-image
-              src="#twitter"
+              src="#qiita"
               width="0.50"
               height="0.50"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
             <a-triangle
-              color="aqua"
+              color="green"
               vertex-a="0.588 0 -0.809"
               vertex-b="-18.43 0 5.371"
               vertex-c="0.588 0 19.19"
               opacity="0"
             ></a-triangle>
           </a-entity>
+
           <!-- github -->
           <a-entity
             position="0.588 0.6 0.809"
@@ -170,6 +173,7 @@
             opacity="0"
           ></a-triangle>
           </a-entity>
+
           <!-- Youtube -->
           <a-entity
             position="0.951 0.6 -0.309"
@@ -183,7 +187,7 @@
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
             <a-triangle
-            color="fuchsia"
+            color="red"
             vertex-a="-0.951 0 0.309"
             vertex-b="18.069 0 6.489"
             vertex-c="10.809 0 -15.871"
