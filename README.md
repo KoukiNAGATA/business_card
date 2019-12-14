@@ -1,0 +1,2 @@
+# business_card
+KoukiNAGATAのWEBAR名刺1号のリポジトリです。GitHubPagesのリンクは随時更新していきます。
