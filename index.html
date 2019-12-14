@@ -17,7 +17,7 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene
       embedded
-      arjs="debugUIEnabled:false;"
+      arjs="patternRatio: 0.9; debugUIEnabled:false;"
       renderer="gammaOutPut: true;"
       vr-mode-ui="enabled: false"
     >
@@ -36,7 +36,7 @@
           shadow="receive: true"
         ></a-mixin>
         <!-- photo -->
-        <a-asset-item id="photo" src="assets/img/koukinagata"></a-asset-item>
+        <a-asset-item id="photo" src="assets/img/koukinagata.jpeg"></a-asset-item>
         <!-- contact -->
         <img id="qiita" src="assets/img/contact/qiitan.png" />
         <img id="facebook" src="assets/img/contact/face.png" />
@@ -53,12 +53,12 @@
         cursor="fuse: false; rayOrigin: mouse"
         preset="custom"
         type="pattern"
-        url="assets/marker/pattern-qrcode.patt"
+        url="assets/marker/pattern-official.patt"
       >
         <!-- centor -->
         <a-entity
           rotation="0 0 0"
-          link="href: https://github.com/KoukiNAGATA/business_card"
+          link="href: https://github.com/KoukiNAGATA/business_card target: _blank"
           animation-mixer
         >
           <a-image
@@ -66,7 +66,6 @@
             width="0.50"
             height="0.50"
             rotation="-60 0 0"
-            animation="property: scale; to:1.5 1.5 1; direction: alternate; dur: 2000; repeat: indefinite; easing: linear"
           >
           </a-image>
         </a-entity>
@@ -93,7 +92,7 @@
           <!-- twitter -->
           <a-entity
             position="0 0.6 -1"
-            link="href: https://twitter.com/NAGATAChannel"
+            link="href: https://twitter.com/NAGATAChannel target: _blank"
           >
             <a-image
               src="#twitter"
@@ -114,7 +113,7 @@
           <!-- facebook -->
           <a-entity
             position="-0.951 0.6 -0.309"
-            link="href: https://www.facebook.com/profile.php?id=100029461996992"
+            link="href: https://www.facebook.com/profile.php?id=100029461996992 target: _blank"
           >
             <a-image
               src="#facebook"
@@ -135,7 +134,7 @@
           <!-- qiita -->
           <a-entity
             position="-0.588 0.6 0.809"
-            link="href: https://qiita.com/KoukiNAGATA"
+            link="href: https://qiita.com/KoukiNAGATA target: _blank"
           >
             <a-image
               src="#qiita"
@@ -156,7 +155,7 @@
           <!-- github -->
           <a-entity
             position="0.588 0.6 0.809"
-            link="href: https://github.com/KoukiNAGATA"
+            link="href: https://github.com/KoukiNAGATA target: _blank"
           >
             <a-image
               src="#github"
@@ -177,7 +176,7 @@
           <!-- Youtube -->
           <a-entity
             position="0.951 0.6 -0.309"
-            link="href: https://www.youtube.com/channel/UC70tLIV4fp-s7AfSD7prdXw"
+            link="href: https://www.youtube.com/channel/UC70tLIV4fp-s7AfSD7prdXw target: _blank"
           >
             <a-image
               src="#youtube"
