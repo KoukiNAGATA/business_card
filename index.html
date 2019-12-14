@@ -35,13 +35,15 @@
           rotation="-90 0 0"
           shadow="receive: true"
         ></a-mixin>
-        <!-- glTF or glb -->
+        <!-- photo -->
+        <a-asset-item id="photo" src="assets/img/koukinagata.jpeg"></a-asset-item>
         <!-- contact -->
-        <img id="gmail" src="assets/img/contact/mail.png" />
-        <img id="instagram" src="assets/img/contact/instagram.png" />
-        <img id="twitter" src="assets/img/contact/twitter.png" />
-        <img id="github" src="assets/img/contact/github.png" />
-        <img id="facebook" src="assets/img/contact/facebook.png" />
+        <img id="qiita" src="assets/img/contact/qiitan.png" />
+        <img id="facebook" src="assets/img/contact/Face.png" />
+        <img id="twitter" src="assets/img/contact/twi.png" />
+        <img id="github" src="assets/img/contact/GitHub.png" />
+        <img id="youtube" src="assets/img/contact/youtube.png" />
+        <img id="commingsoon" src="assets/img/contact/commingsoon.png" />
       </a-assets>
 
       <!-- set marker -->
@@ -53,25 +55,25 @@
         type="pattern"
         url="assets/marker/pattern-qrcode.patt"
       >
-        <!-- glb -->
+        <!-- centor -->
         <a-entity
-          gltf-model="#glb"
+          src="#photo"
           scale="1 1 1"
           rotation="0 0 0"
-          link="href: https://github.com/5ebec/arcard-template"
+          link="href: https://github.com/KoukiNAGATA/business_card"
           animation-mixer
         ></a-entity>
         <a-text
           mixin="text"
-          value="bunny"
-          color="#a5ebec"
+          value="KoukiNAGATA"
+          color="#black"
           align="center"
           width="4.5"
           position="0.0 0.1 0.4"
         ></a-text>
         <a-text
           mixin="shadow"
-          value="bunny"
+          value="KoukiNAGATA"
           align="center"
           width="4.5"
           position="0.01 0.0 0.41"
@@ -82,23 +84,18 @@
           rotation="0 0 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 25000; easing: linear"
         >
-          <!-- facebook -->
+          <!-- qiita -->
           <a-entity
             position="0 0.6 -1"
-            link="href: https://www.facebook.com/"
+            link="href: https://qiita.com/KoukiNAGATA"
           >
             <a-image
-              src="#facebook"
+              src="#qiita"
               width="0.25"
               height="0.25"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
-            <a-sphere
-              color="blue"
-              radius="0.3"
-              opacity="0.2"
-            ></a-sphere>
             <a-triangle
               color="blue"
               vertex-a="0 0 1"
@@ -107,23 +104,18 @@
               opacity="0"
             ></a-triangle>
           </a-entity>
-          <!-- gmail -->
+          <!-- facebook -->
           <a-entity
             position="-0.951 0.6 -0.309"
-            link="href: https://mail.google.com/"
+            link="href: https://www.facebook.com/profile.php?id=100029461996992"
           >
             <a-image
-              src="#gmail"
+              src="#facebook"
               width="0.25"
               height="0.25"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
-            <a-sphere
-              color="red"
-              radius="0.3"
-              opacity="0.2"
-            ></a-sphere>
             <a-triangle
               color="red"
               vertex-a="0.951 0 0.309"
@@ -135,7 +127,7 @@
           <!-- twitter -->
           <a-entity
             position="-0.588 0.6 0.809"
-            link="href: https://twitter.com/"
+            link="href: https://twitter.com/NAGATAChannel"
           >
             <a-image
               src="#twitter"
@@ -144,11 +136,6 @@
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
-            <a-sphere
-              color="aqua"
-              radius="0.3"
-              opacity="0.2"
-            ></a-sphere>
             <a-triangle
               color="aqua"
               vertex-a="0.588 0 -0.809"
@@ -160,7 +147,7 @@
           <!-- github -->
           <a-entity
             position="0.588 0.6 0.809"
-            link="href: https://github.com/"
+            link="href: https://github.com/KoukiNAGATA"
           >
             <a-image
               src="#github"
@@ -169,11 +156,6 @@
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
-            <a-sphere
-              color="black"
-              radius="0.3"
-              opacity="0.2"
-            ></a-sphere>
             <a-triangle
             color="black"
             vertex-a="-0.588 0 -0.809"
@@ -182,23 +164,18 @@
             opacity="0"
           ></a-triangle>
           </a-entity>
-          <!-- instagram -->
+          <!-- Youtube -->
           <a-entity
             position="0.951 0.6 -0.309"
-            link="href: https://instagram.com/"
+            link="href: https://www.youtube.com/channel/UC70tLIV4fp-s7AfSD7prdXw"
           >
             <a-image
-              src="#instagram"
+              src="#youtube"
               width="0.25"
               height="0.25"
               rotation="-60 0 0"
               animation="property: rotation; to: -60 -360 0; loop: true; dur: 25000; easing: linear"
             ></a-image>
-            <a-sphere
-              color="fuchsia"
-              radius="0.3"
-              opacity="0.2"
-            ></a-sphere>
             <a-triangle
             color="fuchsia"
             vertex-a="-0.951 0 0.309"
