@@ -37,6 +37,7 @@
         ></a-mixin>
         <!-- photo -->
         <img id="photo" src="assets/img/koukinagata.jpeg"/>
+        <img id="photo2" src="assets/img/koukinagata_back/.jpeg"/>
         <!-- contact -->
         <img id="qiita" src="assets/img/contact/qiitan.png" />
         <img id="facebook" src="assets/img/contact/facebook.png" />
@@ -58,17 +59,32 @@
         <!-- centor -->
         <a-entity
           rotation="0 0 0"
-          link="href: https://github.com/KoukiNAGATA/business_card; target: _blank"
+          animation-mixer
+        >
+          <a-image
+            src="#photo2"
+            width="0.75"
+            height="0.75"
+            rotation="-60 0 0"
+            animation="property: rotation; to: 0 -60 0; loop: true; dur: 25000; easing: linear"
+          >
+          </a-image>
+        </a-entity>
+
+        <a-entity
+          rotation="0 0 0"
           animation-mixer
         >
           <a-image
             src="#photo"
             width="0.75"
             height="0.75"
-            rotation="-60 0 0"
+            rotation="120 0 0"
+            animation="property: rotation; to: 0 -60 0; loop: true; dur: 25000; easing: linear"
           >
           </a-image>
         </a-entity>
+
         <a-text
           mixin="text"
           value="KoukiNAGATA"
@@ -92,8 +108,8 @@
           <!-- twitter -->
           <a-entity
             position="0 0.6 -1"
-            link="href: https://twitter.com/NAGATAChannel; target: _blank"
           >
+            <a-link href="href: https://twitter.com/NAGATAChannel; target: _blank"></a-link>
             <a-image
               src="#twitter"
               width="0.50"
@@ -113,8 +129,8 @@
           <!-- facebook -->
           <a-entity
             position="-0.951 0.6 -0.309"
-            link="href: https://www.facebook.com/profile.php?id=100029461996992; target: _blank"
           >
+            <a-link href="href: https://www.facebook.com/profile.php?id=100029461996992; target: _blank"></a-link>
             <a-image
               src="#facebook"
               width="0.50"
@@ -134,8 +150,8 @@
           <!-- qiita -->
           <a-entity
             position="-0.588 0.6 0.809"
-            link="href: https://qiita.com/KoukiNAGATA; target: _blank"
           >
+            <a-link href="href: https://qiita.com/KoukiNAGATA; target: _blank"></a-link>
             <a-image
               src="#qiita"
               width="0.50"
@@ -155,8 +171,8 @@
           <!-- github -->
           <a-entity
             position="0.588 0.6 0.809"
-            link="href: https://github.com/KoukiNAGATA; target: _blank"
           >
+            <a-link href="href: https://github.com/KoukiNAGATA; target: _blank"></a-link>
             <a-image
               src="#github"
               width="0.50"
@@ -176,8 +192,8 @@
           <!-- Youtube -->
           <a-entity
             position="0.951 0.6 -0.309"
-            link="href: https://www.youtube.com/channel/UC70tLIV4fp-s7AfSD7prdXw; target: _blank"
           >
+            <a-link href="href: https://www.youtube.com/channel/UC70tLIV4fp-s7AfSD7prdXw; target: _blank"></a-link>
             <a-image
               src="#youtube"
               width="0.50"
